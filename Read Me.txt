@@ -1,0 +1,19 @@
+
+Merhabalar Ben ANIL HACIBABA
+
+Ben istediğiniz projeyi elimden geldiğince istediğiniz gibi yapmaya çalıştım. Öncelikle MMSQL database kullanmadım. 
+Çünkü bilgisayarımda hata oluştu ve problemi çözemedim ve projeyi yapmak için 3 gün belirtildiği için yetiştirmek için SQLİTE kullanmak zorunda kaldım.
+
+Poreji kısaca anlatmak gerekirse ilk olarak bir ana sayfa oluşturdum. Bu sayfayı Cardları kullanarak bir düzen yaptım. Daha sonra cardların arasına bir carousel eklemesi yaptım.
+Bu ana sayfada gündem olan haberleri yayınladım.(Hürriyet Gazetesinden Alıntı) ilk 3 haberi başka bir web sayfasında geçiş yaparak haberin tamamını yayınladım. 
+Örnek olarak görünmesi için bu işlemi yaptım. Diğer haberler normal card olarak görünmektedir.
+Ana sayfadan bir geçiş yaparak  spor sayfasına geçiyoruz.Burda spor haberlerini yayınladım.Karışık gündemdeki haberlerden oluşturdum. 
+Ve bu sayfada temel olarak ana sayfanın düzeninde yaptım.Bu sayfada istenilen güncelle butonu ile veritabanına kayıtlı haberleri görüyoruz. Bu haberler veri tabanına kayıtlı olan haberlerdir.
+En son olarak delete butonuna bastığımda bana vermiş olduğunu jsondaki bilgileri ufak bir tablo yaptım ve ayrıca button ekleyerek original json ulaşmamızı sağladım.
+
+Umarım istediğiniz projeye yapmışımdır. Database hakkında görüşmede belirttiğim gibi çok fazla bilgim olmadığından en kısa sürece bir oluşum yapmaya çalıştım.
+Genelde back-end olarak 1 tane projede database bağlanmasını çalışmıştım. Web sayfası olarak ilk denemem olduğundan  hatalarım olabileceğinin farkındayım.
+
+Web sayfası bu şekilde sürecin nasıl devam ediceğini bilmiyorum ama bir düzenleme veya geliştirmem gerekiyorsa yapabilirim.
+
+ Teşekkür ederim. Kolay Gelsin

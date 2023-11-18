@@ -1,0 +1,114 @@
+<cfoutput>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>Ana Sayfa</title>
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light navbar navbar-dark bg-dark">
+        <nav class="navbar navbar-light">
+            <a class="navbar-brand" href="#" style="margin-left: 50px;">
+              <img src="a1.jpg" width="100" height="100"  alt="">
+              <b style="margin-left: 25px;"> ANIL HACIBABA </b>
+            </a>
+          </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="navbar-brand" href="#"onClick="location.href='spor.html'" style="margin-left: 300px;">Spor <span class="sr-only">(current)</span></a>
+            </li>
+            
+            
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+          </br></br>
+      <h1 style="text-align: center">Bakan Şimşek: İyileşmenin devamını bekliyoruz</h1>
+    </br></br>
+
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block" style="margin-left: 400px;" src="https://image.hurimg.com/i/hurriyet/75/750x422/65520d5a4e3fe01e78d9b6fc.jpg" alt="First slide">
+              </div>
+            </div>
+          </div>
+        </br></br>
+        <strong><p style="text-align: center">Hazine ve Maliye Bakanı Mehmet Şimşek "Yıllık cari dengede son iki ayda 7,3 milyar dolar iyileşme sağlandı. </br>
+        Program öngörülerimiz doğrultusunda bu iyileşmenin devamını bekliyoruz" dedi.</br>
+        Türkiye ekonomisinde güçlenme devam ediyor. Güven ve istikrar ortamında ivmelenen ekonomide veriler olumlu seyrediyor.</br> Türkiye ekonomisi bu yıl ikinci kez cari fazla verdi.
+
+        Cari işlemler verisine ilişkin açıklama yapan Bakan Şimşek "Yıllık cari dengede son iki ayda 7,3 milyar dolar iyileşme sağlandı. </br>Program öngörülerimiz doğrultusunda bu iyileşmenin devamını bekliyoruz" dedi.</p></strong>
+      </br><h3 style="text-align: center">CARİ DENGE FAZLA VERDİ</h3></br>
+        <strong><p style="text-align: center"> Türkiye Cumhuriyet Merkez Bankası tarafından açıklanan Ödemeler Dengesi raporuna göre, Eylül ayında cari fazla 1 milyar 876 milyon dolar oldu.
+
+        </br>  Böylece Haziran ayında gerçekleşen 716 milyon dolar fazlanın ardından, yılın ikinci fazla rakamı görülmüş oldu.</br> Altın ve enerji hariç cari işlemler hesabı ise 7 milyar 118 milyon dolar fazla verdi.</p></strong>
+          </br></br>
+        <ul id="newsList"></ul>
+    
+        <script>
+            async function fetchNews() {
+                const response = await fetch('/api/news');
+                const newsData = await response.json();
+                const newsListContainer = document.getElementById("newsList");
+    
+                newsData.forEach(news => {
+                    const newsItem = document.createElement("li");
+                    newsItem.textContent = `${news.title}: ${news.content}`;
+                    newsListContainer.appendChild(newsItem);
+                });
+            }
+    
+            window.onload = fetchNews;
+        </script>
+       
+       <nav class="navbar navbar-expand-lg navbar-light bg-light navbar navbar-dark bg-dark">
+        <nav class="navbar navbar-light">
+            <a class="navbar-brand" href="#" style="margin-left: 50px;">
+              <img src="a1.jpg" width="100" height="100"  alt="">
+              <b style="margin-left: 25px;"> ANIL HACIBABA </b>
+            </a>
+          </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="navbar-brand" href="#"onClick="location.href='spor.html'" style="margin-left: 300px;">Spor <span class="sr-only">(current)</span></a>
+            </li>
+            
+            
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    </body>
+    </html>
+    </cfoutput>
